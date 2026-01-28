@@ -1,0 +1,17 @@
+header {
+  background: var(--bg-color);
+}
+
+.primary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 1rem;
+      
+}
+
+.logo {
+  font: var(--h1);
+  color: var(--brand-color-light);
+}
