@@ -25,10 +25,14 @@ main {
   height: 420px;
 }
 
+.news {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .card-content {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  position: static;
 
   width: 100%;
   padding: 0.75rem;
@@ -36,6 +40,14 @@ main {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+
+
+}
+
+.card-overlay .card-content{
+  position: absolute;
+  bottom: 0;
+  left: 0;
 
   background: linear-gradient(
     to top,
@@ -70,6 +82,43 @@ main {
   width: fit-content;
 }
 
-.news .card {
+.news .card.card-overlay {
   height: 240px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font: var(--h3);
+  color: var(--text-color-primary);
+
+  
+}
+.section-header a {
+  font: var(--text-span);
+  color: var(--text-color-secondary);
+  text-decoration: none;
+}
+
+.most-read {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.most-read .news .card h2 {
+  font: var(--h2);
+  color: var(--text-color-primary);
+}
+
+.most-read .card{
+  position: relative;
+}
+
+.most-read .card .tag {
+  position: absolute;
+  top: 0.75rem;
+  z-index: 1;
 }
