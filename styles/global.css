@@ -21,14 +21,16 @@
   --text-sm: 400 16px/160% var(--font-family);
 
   .section-header h2 {
-  font: 700 20px/125% var(--font-family);
-  color: var(--text-color-primary);
-  max-width: 80%;
-
-  
+    font: 700 20px/125% var(--font-family);
+    color: var(--text-color-primary);
+    max-width: 80%;
+  }
 }
 
-
-
-
+@media (min-width: 1024px) {
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+  }
 }
