@@ -10,7 +10,7 @@ main {
 .card {
   position: relative;
   overflow: hidden;
-  border-radius: 0.75rem;
+  border-radius: 0.30rem;
 
 }
 
@@ -179,5 +179,29 @@ main {
 }
 
 @media (min-width: 1024px) {
-  
+    main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+  }
+
+  .news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+    border: 1px solid red;
+
+
+  }
+
+  .news .card {
+    width: 300px;
+    height: 200px;
+  }
+
+  .card card-featured img {
+    width: 628px;
+    height: 416px;
+  }
 }
