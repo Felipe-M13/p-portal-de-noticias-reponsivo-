@@ -172,7 +172,6 @@ main {
 
 @media (min-width: 1024px) {
 
-
   .hero {
     display: grid;
     grid-auto-flow: column;
@@ -191,9 +190,57 @@ main {
   height: 100%;
 }
 
-  .news {
+  .hero > .news {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
   }
+
+  .divider-two {
+    margin-top: 2rem;
+  }
+
+  .most-read > .news {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .most-read > .news .card {
+    flex: 1;
+  }
+
+  .most-read > .news .card img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+
+ .ai-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+ }
+
+  .grid-area {
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 32px;
+    margin-top: 32px;
+  }
+
+  .card-list img {
+    width: 176px;
+    height: 176px;
+    object-fit: cover;
+  }
+
+  a:hover {
+    color: var(--brand-color-dark);
+  }
+
+  a {
+  transition: color 0.2s ease;
+}
 }
